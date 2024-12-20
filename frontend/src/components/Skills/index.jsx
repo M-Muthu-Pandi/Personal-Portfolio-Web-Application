@@ -1,24 +1,22 @@
-import { useEffect } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import Header from "../Common/Header";
 
 const Skills = () => {
-  const skill = [
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-    { image: "https://i.imgur.com/AlLeAfh.png", title: "HTML5" },
-  ];
-  // Scroll to top when the component mounts
+  const [skill, setSkill] = useState([]);
+
+  // Fetch Contact Form from the API on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    axios
+      .get("http://localhost:5000/api/skills")
+      .then((res) => {
+        setSkill(res.data);
+      })
+      .catch((err) => {
+        console.error("Error fetching data", err);
+      });
   }, []);
 
   return (

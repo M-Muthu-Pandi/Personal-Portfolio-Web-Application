@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Sidebar from "../Sidebar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ home, about, skills, projects, contact }) => {
+  const navigate = useNavigate();
   const [isSideNavVisible, setIsSideNavVisible] = useState(false);
 
   const navigation = [
@@ -36,7 +37,13 @@ const Header = ({ home, about, skills, projects, contact }) => {
   return (
     <header className="bg-black sticky md:fixed w-full top-0 p-4 flex justify-between items-center gap-3">
       <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
-        Muthupandi M
+        <span
+          className="cursor-pointer"
+          onClick={() => navigate("/adminaccess")}
+        >
+          M
+        </span>
+        uthupandi M
       </h1>
 
       <div className="hidden md:flex justify-evenly gap-3 font-semibold lg:text-lg p-2 w-1/2">

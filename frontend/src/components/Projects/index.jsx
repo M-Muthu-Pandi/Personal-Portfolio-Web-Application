@@ -1,40 +1,22 @@
-import { useEffect } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import Header from "../Common/Header";
 
 const Projects = () => {
-  const project = [
-    {
-      image: "https://i.imgur.com/J6D1Emc.png",
-      title: "Mu2 Infinity",
-      desc: "A full-stack e-commerce web application built using MongoDB, Express.js, React, and Node.js. This project delivers a complete online shopping experience with features like product listings, user authentication, a shopping cart, and order management.",
-      skiilsUsed: "MongoDB, Express, React, MongoDB, Firebase, Tailwind CSS,",
-      liveDemo: "https://mu2infinity-ecommerce-mern.vercel.app/",
-      gitHub:
-        "https://github.com/M-Muthu-Pandi/MERN-Stack-E-Commerce-Website.git",
-    },
-    {
-      image: "https://i.imgur.com/J6D1Emc.png",
-      title: "Mu2 Infinity",
-      desc: "A full-stack e-commerce web application built using MongoDB, Express.js, React, and Node.js. This project delivers a complete online shopping experience with features like product listings, user authentication, a shopping cart, and order management.",
-      skiilsUsed: "MongoDB, Express, React, MongoDB, Firebase, Tailwind CSS,",
-      liveDemo: "https://mu2infinity-ecommerce-mern.vercel.app/",
-      gitHub:
-        "https://github.com/M-Muthu-Pandi/MERN-Stack-E-Commerce-Website.git",
-    },
-    {
-      image: "https://i.imgur.com/J6D1Emc.png",
-      title: "Mu2 Infinity",
-      desc: "A full-stack e-commerce web application built using MongoDB, Express.js, React, and Node.js. This project delivers a complete online shopping experience with features like product listings, user authentication, a shopping cart, and order management.",
-      skiilsUsed: "MongoDB, Express, React, MongoDB, Firebase, Tailwind CSS,",
-      liveDemo: "https://mu2infinity-ecommerce-mern.vercel.app/",
-      gitHub:
-        "https://github.com/M-Muthu-Pandi/MERN-Stack-E-Commerce-Website.git",
-    },
-  ];
+  const [project, setProject] = useState([]);
 
-  // Scroll to top when the component mounts
+  /// Fetch Contact Form from the API on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    axios
+      .get("http://localhost:5000/api/projects")
+      .then((res) => {
+        setProject(res.data);
+      })
+      .catch((err) => {
+        console.error("Error fetching data", err);
+      });
   }, []);
 
   return (
@@ -60,7 +42,7 @@ const Projects = () => {
                   {item.title}
                 </h3>
                 <p>{item.desc}</p>
-                <p className="text-sm opacity-70">{item.skiilsUsed}</p>
+                <p className="text-sm">{item.skiilsUsed}</p>
                 <div className="flex gap-5">
                   <a
                     className="py-1 px-2 bg-green-500 hover:bg-green-700 text-black font-semibold rounded-md"
