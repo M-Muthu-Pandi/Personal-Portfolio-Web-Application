@@ -27,7 +27,7 @@ const ConnectMe = () => {
         <div className="flex flex-col gap-5">
           {connect.map((item, index) => {
             return (
-              <div key={index} className="flex items-center gap-3 sm:gap-5">
+              <div key={index} className="flex items-center gap-3 sm:gap-5 contact-1">
                 <img className="w-6" src={item.image} alt="Social Media" />
                 <a
                   className="font-medium hover:opacity-100 hover:text-green-500 text-sm sm:text-base"

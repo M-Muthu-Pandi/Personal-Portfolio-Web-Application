@@ -38,7 +38,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="text-customDark sm:px-10 rounded-2xl md:w-1/2">
+    <div className="text-customDark sm:px-10 rounded-2xl md:w-1/2 contact">
       <h3 className="text-green-500 font-bold text-2xl mb-5">Send a Message</h3>
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
         <input

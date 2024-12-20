@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Header home={"text-green-500 font-bold"} />
       <main className="flex flex-col md:flex-row md:justify-around gap-20 md:gap-2 items-center md:h-screen p-10 md:p-5">
-        <section className="sm:w-3/4 md:w-1/2 flex flex-col gap-3 items-start">
+        <section className="sm:w-3/4 md:w-1/2 flex flex-col gap-3 items-start animation-1">
           <h3 className="sm:text-xl md:text-2xl lg:text-3xl font-medium">
             Hi,
           </h3>
@@ -37,7 +37,7 @@ const Home = () => {
             Download Resume
           </a>
         </section>
-        <section>
+        <section className="animation-2">
           <img
             className="w-64 md:w-80 lg:w-96 rounded-full border-8 border-customDark shadow-custom ring-4 ring-green-500"
             src={Muthu}

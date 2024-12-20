@@ -6,3 +6,95 @@ body {
   background-color: #0f0f0f;
   color: white;
 }
+
+.animation-1 {
+  animation-name: side;
+  animation-duration: 2s;
+}
+
+@keyframes side {
+  0% {
+    margin-left: -100px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.animation-2 {
+  animation-name: side2;
+  animation-duration: 2s;
+}
+
+@keyframes side2 {
+  0% {
+    margin-right: -100px;
+  }
+
+  100% {
+    margin-right: 0;
+  }
+}
+
+.skill {
+  animation: top-bottom;
+  animation-duration: 2s;
+}
+
+@keyframes top-bottom {
+  0% {
+    margin-top: -100px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.project {
+  animation: bottom-out;
+  animation-duration: 3s;
+}
+
+@keyframes bottom-out {
+  0% {
+    margin-left: -100px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.contact {
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.contact-1 {
+  animation-name: fade-left;
+  animation-duration: 2s;
+}
+
+@keyframes fade-left {
+  0% {
+    margin-left: -50px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}

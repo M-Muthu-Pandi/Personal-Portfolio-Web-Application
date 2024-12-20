@@ -20,22 +20,22 @@ const About = () => {
           />
         </section>
         <section className="w-1/3 hidden md:inline-block"></section>
-        <section className="sm:w-3/4 md:w-1/2 flex flex-col gap-3 text-justify text-sm sm:text-base lg:text-lg">
+        <section className="sm:w-3/4 md:w-1/2 flex flex-col gap-3 text-justify text-sm sm:text-base lg:text-lg gradient-text">
           <h2 className="text-2xl sm:text-3xl font-semibold text-green-500 border-b border-green-500 pb-1">
             About Me
           </h2>
-          <p className=" hover:text-green-500">
+          <p className="hover:text-green-400">
             I am Muthupandi, a motivated professional from Chennai, Tamil Nadu,
             with a strong foundation in both commerce and technology. I
             completed my schooling at St. Paul's Higher Secondary School and
             earned a{" "}
-            <span className="text-green-500 font-semibold">
+            <span className="font-semibold">
               Bachelor of Computer Applications (BCA)
             </span>{" "}
             degree from St. Thomas College of Arts and Science, where I
             cultivated a deep interest in technology and problem-solving.
           </p>
-          <p className=" hover:text-green-500">
+          <p className="hover:text-green-400">
             My professional journey began as a Store Executive at Royal Enfield
             headquarters, where I accumulated over 2 years and 6 months of
             experience. During this time, I gained expertise in inventory
@@ -44,26 +44,24 @@ const About = () => {
             ability to work effectively in a team, all of which are invaluable
             in any professional environment.
           </p>
-          <p className=" hover:text-green-500">
+          <p className="hover:text-green-400">
             Driven by a passion for technology and innovation, I made a
             strategic decision to transition into the IT field. To achieve this,
             I enrolled in a{" "}
-            <span className="text-green-500 font-semibold">
-              Full Stack Developer
-            </span>{" "}
-            course and earned certifications from Error Makes Clever. Through
-            this program, I specialized in the{" "}
-            <span className="text-green-500 font-semibold">
+            <span className="font-semibold">Full Stack Developer</span> course
+            and earned certifications from Error Makes Clever. Through this
+            program, I specialized in the{" "}
+            <span className="font-semibold">
               MERN (MongoDB, Express.js, React.js, Node.js) stack
             </span>
             , acquiring comprehensive skills in{" "}
-            <span className="text-green-500 font-semibold">
+            <span className="font-semibold">
               front-end and back-end development, database management, and
               modern web application design
             </span>
             .
           </p>
-          <p className=" hover:text-green-500">
+          <p className="hover:text-green-400">
             As a Full Stack Developer, I am proficient in building dynamic and
             responsive web applications, designing robust APIs, and working
             collaboratively on end-to-end software development projects. I
@@ -71,7 +69,7 @@ const About = () => {
             deeply committed to staying updated with emerging technologies to
             deliver impactful solutions.
           </p>
-          <p className=" hover:text-green-500">
+          <p className="hover:text-green-400">
             I am now seeking opportunities in the IT sector where I can leverage
             my technical expertise, problem-solving abilities, and previous
             professional experience to contribute to cutting-edge projects. My

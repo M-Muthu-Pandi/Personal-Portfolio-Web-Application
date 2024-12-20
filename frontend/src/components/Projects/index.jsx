@@ -30,7 +30,7 @@ const Projects = () => {
           {project.map((item, index) => {
             return (
               <div
-                className="md:w-[45%] lg:w-[30%] bg-gray-950 hover:bg-gray-900 flex flex-col gap-3 p-5 rounded-xl"
+                className="project md:w-[45%] lg:w-[30%] bg-gray-950 hover:bg-gray-900 flex flex-col gap-3 p-5 rounded-xl"
                 key={index}
               >
                 <img

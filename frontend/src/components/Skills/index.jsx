@@ -30,7 +30,7 @@ const Skills = () => {
           {skill.map((item, index) => {
             return (
               <div
-                className="w-1/4 md:w-1/5 lg:w-[12%] flex justify-center bg-white hover:bg-green-500 p-3 rounded-xl"
+                className="skill w-1/4 md:w-1/5 lg:w-[12%] flex justify-center bg-white hover:bg-green-500 p-3 rounded-xl"
                 key={index}
               >
                 <img className="w-40" src={item.image} alt={item.title} />
