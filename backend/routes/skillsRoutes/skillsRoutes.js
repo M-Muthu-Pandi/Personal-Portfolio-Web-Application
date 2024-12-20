@@ -3,7 +3,7 @@ import { Skills } from "../../models/skillModels.js";
 
 const router = express.Router();
 
-// Get all social media links
+// Get all skill links
 router.get("/", async (req, res) => {
   try {
     const skills = await Skills.find({});
@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// Add a new social media link
+// Add a new skill link
 router.post("/", async (req, res) => {
   try {
     const { image, title } = req.body;

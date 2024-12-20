@@ -84,7 +84,7 @@ const ContactFormsCheck = () => {
           <p className="md:text-lg">
             We're sorry, but this page is not available for user access.
           </p>
-          {/* Button to go back to the home page */}
+
           <button
             onClick={logoutUser}
             className="bg-green-500 rounded-md hover:bg-green-600 p-2"

@@ -20,6 +20,8 @@ const About = () => {
           />
         </section>
         <section className="w-1/3 hidden md:inline-block"></section>
+
+        {/* About */}
         <section className="sm:w-3/4 md:w-1/2 flex flex-col gap-3 text-justify text-sm sm:text-base lg:text-lg gradient-text">
           <h2 className="text-2xl sm:text-3xl font-semibold text-green-500 border-b border-green-500 pb-1">
             About Me

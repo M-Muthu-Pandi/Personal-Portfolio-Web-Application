@@ -37,6 +37,7 @@ const Home = () => {
             Download Resume
           </a>
         </section>
+
         <section className="animation-2">
           <img
             className="w-64 md:w-80 lg:w-96 rounded-full border-8 border-customDark shadow-custom ring-4 ring-green-500"
