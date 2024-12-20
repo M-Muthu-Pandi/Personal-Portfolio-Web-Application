@@ -26,7 +26,7 @@ const ProjectUpload = () => {
     try {
       // Send POST request to add contact form to the backend
       const response = await axios.post(
-        "http://localhost:5000/api/projects",
+        "https://muthu-personal-portfolio.onrender.com/api/projects",
         projectData
       );
       alert("Projects sent successfully!");

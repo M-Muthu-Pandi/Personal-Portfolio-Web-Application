@@ -9,7 +9,7 @@ const ConnectMe = () => {
     window.scrollTo(0, 0);
 
     axios
-      .get("http://localhost:5000/api/socialmedia")
+      .get("https://muthu-personal-portfolio.onrender.com/api/socialmedia")
       .then((res) => {
         setConnect(res.data);
       })

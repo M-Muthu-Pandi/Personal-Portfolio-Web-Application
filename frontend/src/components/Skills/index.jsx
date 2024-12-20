@@ -10,7 +10,7 @@ const Skills = () => {
     window.scrollTo(0, 0);
 
     axios
-      .get("http://localhost:5000/api/skills")
+      .get("https://muthu-personal-portfolio.onrender.com/api/skills")
       .then((res) => {
         setSkill(res.data);
       })

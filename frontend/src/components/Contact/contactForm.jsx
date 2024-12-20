@@ -22,7 +22,7 @@ const ContactForm = () => {
     try {
       // Send POST request to add contact form to the backend
       const response = await axios.post(
-        "http://localhost:5000/api/contactform",
+        "https://muthu-personal-portfolio.onrender.com/api/contactform",
         contactFormData
       );
       alert("Message sent successfully!");

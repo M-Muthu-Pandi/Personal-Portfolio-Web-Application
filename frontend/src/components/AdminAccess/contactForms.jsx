@@ -17,7 +17,7 @@ const ContactFormsCheck = () => {
     window.scrollTo(0, 0);
 
     axios
-      .get("http://localhost:5000/api/contactform")
+      .get("https://muthu-personal-portfolio.onrender.com/api/contactform")
       .then((res) => {
         setContactForm(res.data);
       })

@@ -10,7 +10,7 @@ const Projects = () => {
     window.scrollTo(0, 0);
 
     axios
-      .get("http://localhost:5000/api/projects")
+      .get("https://muthu-personal-portfolio.onrender.com/api/projects")
       .then((res) => {
         setProject(res.data);
       })
